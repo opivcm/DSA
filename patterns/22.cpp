@@ -7,14 +7,14 @@ int main()
     int i=1;
     while(i<=n)
     {
-        int space=i-1;
+        int space=n-i;
         while(space)
         {
             cout<<" ";
             space-=1;
         }
         int j=1;
-        while(j<=n-i+1)
+        while(j<=i)
         {
             cout<<i;
             j+=1;

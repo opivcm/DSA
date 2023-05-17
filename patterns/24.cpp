@@ -5,19 +5,21 @@ int main()
     int n;
     cin>>n;
     int i=1;
+    int value=1;
     while(i<=n)
     {
-        int space=i-1;
+        int space=n-i;
         while(space)
         {
             cout<<" ";
             space-=1;
         }
         int j=1;
-        while(j<=n-i+1)
+        while(j<=i)
         {
-            cout<<i;
+            cout<<value;
             j+=1;
+            value+=1;
         }
         cout<<endl;
         i+=1;

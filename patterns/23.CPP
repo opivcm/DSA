@@ -5,7 +5,8 @@ int main()
     int n;
     cin>>n;
     int i=1;
-    while(i<=n)
+    int value=1;
+    while (i<=n)
     {
         int space=i-1;
         while(space)
@@ -16,10 +17,11 @@ int main()
         int j=1;
         while(j<=n-i+1)
         {
-            cout<<i;
+            cout<<n-i+j-3;
             j+=1;
         }
         cout<<endl;
         i+=1;
     }
+    
 }
