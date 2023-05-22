@@ -17,3 +17,9 @@ void sort(int ar[],int size)
         }
     }
 }
+
+int main()
+{
+    int a;
+    int b;
+}
