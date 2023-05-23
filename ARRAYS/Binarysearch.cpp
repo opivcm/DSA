@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#include<algorithm>
 using namespace std;
 
 void ipsort(int ar[],int size)
@@ -18,17 +19,15 @@ void ipsort(int ar[],int size)
         }*/
     }
     int n=sizeof(ar)/sizeof(ar[0]);
-    sort(ar,ar+n);
+    std::sort(ar,ar+n);
     for(int i=0;i<size;i++)
     {
         cout<<ar[i]<<" ";
     }
     cout<<endl;
 }
-
-int binarysearch(int ar[],int size)
+int binarysearch(int ar[],int size,int key)
 {
-    int key;
     int start=0;
     int end=size-1;
     int mid=(start+end)/2;
@@ -36,17 +35,30 @@ int binarysearch(int ar[],int size)
     {
 
         if(ar[mid]==key)
+        {
+            return mid;
+        }
+        if(ar[mid]<key)     //key dodudu  so start is mid+1 and end is same RIGHTSIDE;
+        {
+            start=mid+1;
+        }
+        else
+        {
+            end=mid-1;   //key chikkudu so start will be as it is , end will move to mid-1; LEFTSIDE;
+        }
+        mid=(start+end)/2;
+        
     }
+    return -1;
 }
 
 int main()
 {
     int a[10];
-    int key;
     int n1;
+    int keys;
     cout<<"Enter the array "<<endl;
     ipsort(a,n1);
-    cout<<"enter the key to be searched"<<endl;
-    cin>>key;
-    cout<<endl;
+    int index=binarysearch(a,n1,keys);
+    cout<<"the key is present in "<<index<<endl;
 }
