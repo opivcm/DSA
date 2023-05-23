@@ -42,11 +42,10 @@ int binarysearch(int ar[],int size)
 int main()
 {
     int a[10];
-    int b[10];
     int key;
-    int e,n1;
+    int n1;
     cout<<"Enter the array "<<endl;
-    ipsort(ar,e);
+    ipsort(a,n1);
     cout<<"enter the key to be searched"<<endl;
     cin>>key;
     cout<<endl;
