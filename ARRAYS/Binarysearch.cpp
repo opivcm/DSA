@@ -2,43 +2,26 @@
 #include<algorithm>
 using namespace std;
 
-void ipsort(int ar[],int size)
+void initial(int a[],int size)
 {
     for(int i=0;i<size;i++)
     {
-        cin>>ar[i];
-       /*for(int j=i+1;j<size;j++)
-        {
-            if(ar[i]>ar[j])
-            {
-                int temp=ar[i];
-                ar[i]=ar[j];
-                ar[j]=temp;
-                
-            }
-        }*/
+        cin>>a[i];
     }
-    int n=sizeof(ar)/sizeof(ar[0]);
-    std::sort(ar,ar+n);
-    for(int i=0;i<size;i++)
-    {
-        cout<<ar[i]<<" ";
-    }
-    cout<<endl;
 }
-int binarysearch(int ar[],int size,int key)
+int binarysearch(int a[],int size,int key)
 {
     int start=0;
     int end=size-1;
-    int mid=(start+end)/2;
+    int mid=start+(end-start)/2;
     while(start<=end)
     {
 
-        if(ar[mid]==key)
+        if(a[mid]==key)
         {
             return mid;
         }
-        if(ar[mid]<key)     //key dodudu  so start is mid+1 and end is same RIGHTSIDE;
+        if(a[mid]<key)     //key dodudu  so start is mid+1 and end is same RIGHTSIDE;
         {
             start=mid+1;
         }
@@ -46,10 +29,17 @@ int binarysearch(int ar[],int size,int key)
         {
             end=mid-1;   //key chikkudu so start will be as it is , end will move to mid-1; LEFTSIDE;
         }
-        mid=(start+end)/2;
-        
+        mid=start+(end-start)/2;
     }
     return -1;
+}
+
+void display(int a[],int size)
+{
+    for(int i=0;i<size;i++)
+    {
+        cout<<a[i]<<" ";
+    }
 }
 
 int main()
@@ -57,8 +47,17 @@ int main()
     int a[10];
     int n1;
     int keys;
+    cout <<"enter the size of the array"<<endl;
+    cin>>n1;
     cout<<"Enter the array "<<endl;
-    ipsort(a,n1);
+    initial(a,n1);
+    cout<<"enter the key to be searched"<<endl;
+    cin>>keys;
+    std::sort(a,a+n1);
+    cout<<"After sorting the array is"<<endl;
+    display(a,n1);
+    cout<<endl;
     int index=binarysearch(a,n1,keys);
     cout<<"the key is present in "<<index<<endl;
+    return 0;
 }
