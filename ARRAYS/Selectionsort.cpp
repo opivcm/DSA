@@ -13,10 +13,17 @@ void selesort(int arr[],int n)
                 mid=j;
             }
         }
-        swap(arr[mid],arr[i]);
+        return swap(arr[mid],arr[i]);
     }
 }
 int main()
 {
-    
+    int a[10];
+    int k;
+    cin>>k;
+    for(int i=0;i<k;i++)
+    {
+        cin>>a[i];
+    }
+    selesort(a,k);
 }
