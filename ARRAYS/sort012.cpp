@@ -29,6 +29,7 @@ right--;
 }
 print(arr,n);
 }
+
 int main(){
 int arr[] = {1,1,0,0,2,2};
 sort012(arr,6);
