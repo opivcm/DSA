@@ -1,5 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
+void reverse(char name[], int n)
+{
+    int s=0;
+    int e=n-1;
+    while(s<e)
+    {
+        swap(name[s++],name[e--]);
+    }
+}
 int length(char name[])
 {
     int count=0;
@@ -17,6 +26,10 @@ int main()
     cin>>name;
     cout<<"your name is ";
     cout<<name<<endl;
-    cout<<"lenght of your name is "<<length(name)<<endl;
+    int len=length(name);
+    cout<<"lenght of your name is "<<len<<endl;
+    reverse(name,len);
+    cout<<"your name in reverse is ";
+    cout<<name<<endl;
     return 0;
 }
