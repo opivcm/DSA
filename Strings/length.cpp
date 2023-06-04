@@ -2,11 +2,11 @@
 using namespace std;
 void reverse(char name[], int n)
 {
-    int s=0;
-    int e=n-1;
-    while(s<e)
+    int st=0;
+    int end=n-1;
+    while(st<end)
     {
-        swap(name[s++],name[e--]);
+        swap(name[st++],name[end--]);
     }
 }
 int length(char name[])
@@ -18,7 +18,6 @@ int length(char name[])
     }
     return count;
 }
-
 int main()
 {
     char name[20];
