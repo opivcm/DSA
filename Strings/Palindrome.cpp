@@ -34,7 +34,6 @@ int main()
     cin>>name;
     int len=length(name);
     cout<<"lenght of your name is "<<len<<endl;
-    cout<<"palindrone or not"<<palindrome(name,len);
+    cout<<"palindrone or not: "<<palindrome(name,len);
     return 0;
-    
 }
