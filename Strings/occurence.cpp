@@ -1,5 +1,8 @@
-#include<bits/stdc++.h>
+#include<iostream>
+#include<string>
+#include<sstream>
 using namespace std;
+
  char getmaxoccur(string s){
     int arr[26]={0};
     for(int i=0;i<s.length();i++)
@@ -31,11 +34,11 @@ using namespace std;
     return final_answer;
 }
 
-
 int main()
 {
    string s;
-   cin>>s;
+   char delimiter=',';
+   getline(cin,s,delimiter);
    cout<<getmaxoccur(s)<<endl;
    return 0;
 }
