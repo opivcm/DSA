@@ -1,4 +1,4 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 bool isPresent(int arr[][4],int ele, int i, int j)
 {
@@ -12,7 +12,6 @@ bool isPresent(int arr[][4],int ele, int i, int j)
         }
     return 0;
 }
-
 int main()
 {
     int arr[3][4];
