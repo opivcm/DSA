@@ -58,6 +58,6 @@ int main()
     display(a,n1);
     cout<<endl;
     int index=binarysearch(a,n1,keys);
-    cout<<"the key is present in "<<index<<endl;
+    cout<<"the key is present in "<<index<<"index"<<endl;
     return 0;
 }
