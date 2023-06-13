@@ -32,5 +32,4 @@ int main()
 
     return 0;
 }
-
 //relation betwween LCM and GCD is LCM(a,b)*GCD(a,b)=a*b;
