@@ -3,7 +3,6 @@ using namespace std;
 int main()
 {
     int num=1;
-
     int *p;//never ever do this , this points some random value.
     cout<<num<<endl;
     cout<<"address of num is "<<&num<<endl;
