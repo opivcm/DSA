@@ -12,6 +12,6 @@ int main()
     cout<<*(arr+1)<<endl;//value of next index
     cout<<*(arr)+1<<endl;//same as *arr+1 value of 0 th index  + 1;
     cout<<*(arr +2)<<endl;//VALUE 6 kodbeku.
-    cout<<arr[2]<<endl;//value 6 kodutte
-    cout<<2[arr]<<endl;
+    cout<<arr[2]<<endl;//value 6 kodutte                    arr[i]=*[arr+i]
+    cout<<2[arr]<<endl;//wtf                                i[arr]=*[i+arr]
 }
