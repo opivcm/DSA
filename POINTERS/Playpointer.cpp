@@ -19,12 +19,10 @@ int main()
 
     int temp[10];
     cout<<sizeof(temp)<<endl;
-    cout<<sizeof(*temp)<<endl;
-
+    cout<<"1st "<<sizeof(*temp)<<endl;
+    cout<<"2nd "<<sizeof(&temp)<<endl;
     int *ptr = &temp[0];
     cout<<sizeof(ptr)<<endl;//adress
     cout<<sizeof(*ptr)<<endl;//value at that adress 
     cout<<sizeof(&ptr)<<endl;//value at that adress 
-
-
 }
