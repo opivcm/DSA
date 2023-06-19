@@ -16,7 +16,7 @@ int main()
     cout<<2[arr]<<endl;//wtf                                i[arr]=*[i+arr]
     cout<<2[arr+i]<<endl;
     cout<<3[arr]<<endl;
-
+    cout<<4+i[arr]<<endl;
 
     int temp[10];
     cout<<sizeof(temp)<<endl;
