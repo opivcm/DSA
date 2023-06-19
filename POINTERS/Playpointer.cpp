@@ -14,10 +14,6 @@ int main()
     cout<<*(arr +2)<<endl;//VALUE 6 kodbeku.
     cout<<arr[2]<<endl;//value 6 kodutte                    arr[i]=*[arr+i]
     cout<<2[arr]<<endl;//wtf                                i[arr]=*[i+arr]
-    cout<<2[arr+i]<<endl;
-    cout<<3[arr]<<endl;
-    cout<<4+i[arr]<<endl;
-    cout<<2[arr+1]<<endl;
 
     int temp[10];
     cout<<sizeof(temp)<<endl;
