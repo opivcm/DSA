@@ -15,6 +15,7 @@ int main()
     cout<<arr[2]<<endl;//value 6 kodutte                    arr[i]=*[arr+i]
     cout<<2[arr]<<endl;//wtf                                i[arr]=*[i+arr]
     cout<<2[arr+i]<<endl;
+    cout<<3[arr]<<endl;
 
 
     int temp[10];
