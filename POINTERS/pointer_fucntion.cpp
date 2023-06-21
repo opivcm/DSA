@@ -1,9 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void function()
+void function(int *p)
 {
-    
+
 }
 int main()
 {
