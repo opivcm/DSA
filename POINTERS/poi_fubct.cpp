@@ -9,12 +9,13 @@ using namespace std;
 
 int getsum(int *arr,int n)      //arr[] or*arr it will pass as pointer
 {
-    cout<<"wtf"<<sizeof(arr)<<endl;
+    cout<<"wtf "<<sizeof(arr)<<endl;
     int sum=0;
     for(int i=0;i<n;i++)
     {
         sum+=arr[i];
     }
+    return sum;
 }
 
 /*void update(int *p)
@@ -27,7 +28,7 @@ int getsum(int *arr,int n)      //arr[] or*arr it will pass as pointer
 
 int main()
 {
-    int arr[10];
+    int arr[5]={1,2,3,4,5};
    // int value=5;
     //int *p=&value;
     //print(p);
@@ -36,6 +37,6 @@ int main()
    //cout<<"before update "<<*p<<endl;  //prints *p value
    // update(p);
    // cout<<"after update  "<<*p<<endl;  //*p is being update with new value 6
-   cout<<"bruh "<<getsum(arr,5)<<endl;
+   cout<<"bruh "<<getsum(arr+2,5)<<endl;
     return 0;
 }
