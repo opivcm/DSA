@@ -1,36 +1,41 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
-void print(int *p)
+/*void print(int *p)
 {
     cout<<p<<endl;   //address
     cout<<*p<<endl;  //value
-}
+}*/
 
-int getsum(int arr[],int *p)
+int getsum(int *arr,int n)      //arr[] or*arr it will pass as pointer
 {
-
+    cout<<"wtf"<<sizeof(arr)<<endl;
+    int sum=0;
+    for(int i=0;i<n;i++)
+    {
+        sum+=arr[i];
+    }
 }
 
-void update(int *p)
+/*void update(int *p)
 {
     //p=p+1;           //address update
     //cout<<"inside the loop the right side p is incremented :-"<<p<<endl;
     *p=*p+1;        //value update
     cout<<"value of new value is  :-"<<*p<<endl;
-}
+}*/
 
 int main()
 {
     int arr[10];
-    int value=5;
-    int *p=&value;
-    print(p);
+   // int value=5;
+    //int *p=&value;
+    //print(p);
 
     //cout<<"before update "<<p<<endl; 
    //cout<<"before update "<<*p<<endl;  //prints *p value
    // update(p);
    // cout<<"after update  "<<*p<<endl;  //*p is being update with new value 6
-   cout<<getsum(arr)<<endl;
+   cout<<"bruh "<<getsum(arr,5)<<endl;
     return 0;
 }
