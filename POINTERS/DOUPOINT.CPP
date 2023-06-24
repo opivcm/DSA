@@ -8,7 +8,15 @@ int main()
     int **p2=&p;
     cout<<"rinting p"<<p<<endl;     //address
     cout<<"address of p"<<&p<<endl; //address
+
     cout<<i<<endl;              //value
     cout<<*p<<endl;             //same value
     cout<<**p2<<endl;           //same value
+
+    cout<<&i<<endl;             //address
+    cout<<p<<endl;              //same address 
+    cout<<*p2<<endl;            //same address
+
+    cout<<&p<<endl;             //same address of last second element
+    cout<<p2<<endl;             //same address of last second element
 }
